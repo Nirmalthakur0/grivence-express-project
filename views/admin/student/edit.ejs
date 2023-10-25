@@ -1,0 +1,55 @@
+<%-include('../layouts/header.ejs') %>
+
+  <%-include('../layouts/sidebar.ejs') %>
+
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+
+      <!-- Main content -->
+      <div class="content">
+
+        <!-- /.card -->
+
+        <div class="card">
+         <div class="card-header d-flex justify-content-between" style="background-color: black; color: white;">
+            <h1 class="card-title" style="line-height: 40px; font-size: 22px; font-family: monospace;"> Edit Student</h1>
+          </div>
+          <!-- /.card-header -->
+          <div class="card-body">
+            <!--modal start-->
+        
+                  <form action="/admin/studentupdate/<%= d._id %>" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                      <label>Name</label>
+                      <input type="text" value="<%= d.name %>" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                      <label>Email</label>
+                      <input type="text" value="<%= d.email %>" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                      <label>Password</label>
+                      <input type="password" value="<%= d.password %>" name="password" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                      <label>Image</label>
+                      <input type="file" value="<%= d.image %>" name="image" class="form-control" required>
+                    </div>
+                    <img src="<%= d.image.url %>" alt="" width="70" height="70" style="border-radius: 50%;"> <br> <br>
+
+                    <button type="submit" class="btn btn-success">update</button>
+                  </form>
+
+          </div>
+          <!-- /.card-body -->
+        </div>
+        <!-- /.card -->
+      </div>
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+
+
+    <%-include('../layouts/footer.ejs') %>

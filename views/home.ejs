@@ -1,0 +1,105 @@
+<%- include('./header.ejs')  %>
+
+
+<section 3>
+
+    <div class="carousel slide" data-bs-ride="carousel" id="raj">
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#raj" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#raj" data-bs-slide-to="1"></button>
+        </div>
+
+
+        <div class="carousel-inner">
+            <div class="carousel-item active " data-bs-interval="4000">
+                <img src="img/rjit.jpg" alt="" class="w-100" height="600px">
+            </div>
+            <div class="carousel-item active " data-bs-interval="4000">
+                <img src="img/building1.jpg" alt="" class="w-100" height="600px">
+            </div>
+        </div>
+
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#raj" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#raj" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+</section>
+
+
+<section 4>
+    <div class="container-fluid ">
+        <div class="container">
+            <div class="row text-center mt-3">
+                <u>
+                    <h1 class="why" data-aos="fade-up" data-aos-duration="1000"> <span style="color: #e5a009;">WHY </span>GRIEVANCE <span
+                            style="color: #e5a009;">REDRESSAL </span> SYSTEM?</h1>
+                </u>
+                <div class="col-md-7 mt-4">
+
+                    <p class="para" data-aos="fade-right" data-aos-duration="1000">The Grievance Redressal Cell has been developed to settle the grievances of the
+                        students and
+                        other stakeholders within a reasonable time period for further strengthening the bond of the
+                        students with the institution by providing them with all kind of facilities to a
+                        satisfaction
+                        level for maintaining a convenient ambience of academic teaching and learning.
+                        Oréll believes that providing on time and competent service is essential not only to attract
+                        new
+                        customers, but also to retain existing ones. ITMGrievance, the revolutionary online
+                        grievance
+                        handling mechanism aims at minimising instances of complaints in professional
+
+
+                        colleges through effective tracking and monitoring of grievances ensuring prompt redressal.
+                        This
+                        portal for online registration and disposal of grievances help users obtain immediate
+                        response
+                        and resolution to their grievances from the institution itself</p>
+
+                </div>
+                <div class="col-md-5 mt-4">
+                    <img src="img/p1.jpg" alt="" class="w-100" height="80%" data-aos="fade-left" data-aos-duration="1000">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section 5>
+    <div class="container-fluid">
+        <div class="container text-center">
+            <div class="row  box2 " data-aos="fade-up">
+                <div class="col-md-4  box" data-aos="zoom-in" data-aos-duration="1000">
+                    <i class="fa-solid fa-user-pen  us"></i>
+                    <h3>STUDENT</h3>
+                    <p>Student can manage or view Their Grievance Here..</p>
+                    <a href="/student" class="btn btn-warning">Login</a>
+                </div>
+
+
+                <div class="col-md-4  box" data-aos="zoom-in" data-aos-duration="1000">
+                    <i class="fa-solid fa-user-tie  us "></i>
+                    <h3>DEAN & PRINCIPAL</h3>
+                    <p>This Section is Managed By the Dean/Principal of ITM University</p>
+                    <a href="/principal" class="btn btn-warning">Login</a>
+                </div>
+
+
+                <div class="col-md-4  box"  data-aos="zoom-in" data-aos-duration="1000">
+                    <i class="fa-solid fa-house-user  us" ></i>
+                    <h3>HANDLER/ADMIN</h3>
+                    <p>This Section is managed and view by the Grievance handler.</p>
+                    <a href="/adminlogin" class="btn btn-warning">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<%- include('./footer.ejs')  %>

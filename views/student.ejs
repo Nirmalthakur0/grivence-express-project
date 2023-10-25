@@ -1,0 +1,49 @@
+<%- include('./header.ejs') %>
+
+
+    <section 2>
+        <div class="container-fluid ant ">
+            <% if(msg.length> 0){ %>
+                <div class="alert alert-danger">
+                  <%= msg %>
+                </div>
+                <% } %>
+                  <% if(msg1.length> 0){ %>
+                    <div class="alert alert-success">
+                      <%= msg1 %>
+                    </div>
+                    <% } %>
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6 b">
+                        <div class="card shadow-lg ba">
+                            <div class="card-body">
+
+                                <h3 style="color: aliceblue;">Student Login Your Account</h3>
+                                <form action="/student/verifylogin" method="post">
+                                    <label>Email</label>
+                                    <input type="email" class="form-control" name="email"
+                                        placeholder="Email or Username" required>
+                                    <br>
+                                    <label>Password</label>
+                                    <input type="password" class="form-control" name="password" placeholder="Password"
+                                        required> <br>
+
+                                    <button class=" btn btn-outline-warning">Submit
+                                    </button>
+                                    <h6 style="color: white;">forget account & password? <a href="">click</a></h6>
+
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <%- include('./footer.ejs') %>

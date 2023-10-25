@@ -1,0 +1,118 @@
+/* section 1 start */
+
+ 
+
+.aa {
+    background-color: #b31322;
+}
+
+.lal {
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    column-gap: 60px;
+}
+
+
+@media(max-width:900px) {
+    .lal {
+        column-gap: 0px;
+    }
+
+}
+
+.but {
+    border: #f0d40c 2px solid;
+    background-color: #f0d40c;
+    margin: 8px 5px;
+    padding: 3px 22px;
+    border-radius: 10px;
+    border-width: 8px;
+}
+
+
+
+/* section 1 end */
+
+
+
+
+/* section 2 css start*/
+.ant {
+    background-image: url(../img/back2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 600px;
+    
+}
+
+.b {
+    margin: 170px 0px;
+}
+.ba{
+    background-color: #0000005c;
+    font-family: emoji;
+}
+
+.nun{
+    display: flex;
+    column-gap: 40px;
+}
+
+/* section 2 end */
+
+
+/*section 3 start*/
+
+.pet {
+    font-size: 18px;
+    line-height: 56px;
+}
+
+.kl {
+    font-family: Gloock;
+    margin-top: 32px;
+
+}
+
+
+.hh {
+    font-size: 28px;
+    color: #f7b721;
+}
+
+.gg {
+    font-family: Genos;
+    font-size: 23px;
+    color: aliceblue;
+}
+
+
+
+.icon b {
+    border: 2px solid;
+    width: 36px;
+    text-align: center;
+    border-radius: 7px;
+    height: 30px;
+
+}
+
+/*section 3 end */
+
+/* section 4 start */
+
+.KO {
+    color: white;
+    font-family: monospace;
+    margin-top: 24px;
+    font-size: 17px;
+    height: 50px;
+    background-color: blacks;
+}
+
+@media(max-width:768px) {
+    .KO {
+        height: 65px;
+    }
+}
