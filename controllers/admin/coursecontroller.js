@@ -5,11 +5,11 @@ class coursecontroller {
 
     static addcourse = async (req, res) => {
         try {
-            const { name, role, } = req.data1
+            const { name, role,image } = req.data1
             const odata = await coursemodel.find()
             // console.log(data)
 
-            res.render('admin/course/addcourse', { n: name, d: odata, role: role })
+            res.render('admin/course/addcourse', { n: name, d: odata, role: role,img:image })
 
         } catch (error) {
             console.log(error)
@@ -49,7 +49,7 @@ class coursecontroller {
             const { name, role } = req.data1
             const odata = await coursemodel.findById(req.params.id)
 
-            res.render('admin/course/editcourse', { n: name, role: role, d: odata,msg:req.flash('error'),msg1:req.flash('update course success') })
+            res.render('admin/course/editcourse', { n: name, role: role, d: odata,msg:req.flash('error'),msg1:req.flash('update course success'),img:image })
 
         } catch (error) {
 
@@ -60,7 +60,7 @@ class coursecontroller {
         try {
 
             // console.log(req.body)
-            const { cname, role } = req.body
+            const { cname, role, } = req.body
            var odata = { cname: cname }
 
             const id = (req.params.id)
