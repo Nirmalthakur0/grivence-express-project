@@ -72,10 +72,10 @@ class StudentController {
     static viewstudent = async (req, res) => {
         try {
             // console.log(req.param.id)
-            const { name, role } = req.data1
+            const { name, role,image } = req.data1
             const data = await studentmodel.findById(req.params.id)
             // console.log(data)
-            res.render('admin/student/view', { d: data, n: name, role: role })
+            res.render('admin/student/view', { d: data, n: name, role: role,img:image })
         } catch (error) {
             console.log(error)
 
